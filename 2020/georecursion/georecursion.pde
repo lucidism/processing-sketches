@@ -3,7 +3,6 @@ int iter;
 
 PGraphics stamp;
 PShader s;
-PImage[] tex;
 
 //color[] colors = { #2772B0, #475b6b, #50D4C9, #D69081, #A12823 };
 //color[] colors = { #CCC90E, #6B6A37, #FFDB59, #88ABEB, #0481CC };
@@ -15,11 +14,8 @@ color[] colors = { #15998B, #71BF69, #FFEF45, #E69429, #FF4638 };
 void setup() {
   size(800, 800);
   smooth(8);
-  
+
   stamp = createGraphics(width, height);
-  tex = new PImage[2];
-  tex[0] = loadImage("tex0.png");
-  tex[1] = loadImage("tex1.png");
 
   noLoop();
 }
